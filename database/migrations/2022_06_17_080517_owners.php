@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('owners', function (Blueprint $table) {
-            $table->unsignedBigInteger('id')->autoincrement();
+            $table->unsignedBigInteger('id')->autoIncrement();
             $table->string('first_name')->nullable();
             $table->string('surname')->nullable();
             $table->string('email')->nullable();
